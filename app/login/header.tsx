@@ -41,7 +41,7 @@ function header() {
         <div className='flex items-center gap-12'>
         <h1 className='text-3xl'>WedMeGood</h1>
         <ul className='flex gap-6 text-base mr-8 cursor-pointer '>
-        {headbarMenuItems.map(items => <li>{items.title}</li>)}
+        {headbarMenuItems.map(items => <li className='hover:bg-[#b4245d]'>{items.title}</li>)}
         </ul>
         </div>
         <button className='px-10 py-1 bg-[#b4245d] rounded-2xl'>Login</button>
