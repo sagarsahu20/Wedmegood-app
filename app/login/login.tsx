@@ -1,7 +1,8 @@
 
-import React from 'react'
 
 function login() {
+ 
+
   return (
     <div className='flex justify-center '>
       <div className='border mt-[30px] flex h-[650px] w-3/5 max-w-7xl shadow'>

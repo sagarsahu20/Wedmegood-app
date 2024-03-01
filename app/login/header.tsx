@@ -30,11 +30,6 @@ function header() {
     }
   ]
 
-
-
-
-
-
   return (
     <div className='border border-red-500 bg-[#e72e77]'>
       <div className='flex  items-center justify-between mx-5 h-[55px]'>
