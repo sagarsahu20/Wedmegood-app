@@ -1,7 +1,28 @@
+"use client"
+import { useState } from "react"
 
 
 function login() {
  
+ function handleSubmit (e: any) {
+     e.preventDefault();
+     
+     const formData = {
+      name: name,
+      email: email,
+      number: number,
+      city: city,
+     }
+ console.log(formData)
+ }
+ 
+ var name = "";
+ var email = "";
+ var number = " ";
+ var city = "";
+
+
+
 
   return (
     <div className='flex justify-center '>
@@ -14,11 +35,11 @@ function login() {
 
           <div className='w-full flex flex-col items-center mt-3'>
             <h1 className='text-black text-3xl font-[600] mt-8'>Sign In/Sign UP</h1>
-            <form className='flex flex-col items-center w-5/6' >
-              <input className='w-11/12 border h-12 p-2 rounded-md mt-4 text-black' type="text" placeholder='Enter your Name'  />
-              <input className='w-11/12 border h-12 p-2 rounded-md mt-4 text-black' type='email' placeholder='Enter your e-mail' />
-              <input className='w-11/12 border h-12 p-2 rounded-md mt-4 text-black' type="number" placeholder='Enter your mobile number'  />
-              <input className='w-11/12 border h-12 p-2 rounded-md mt-4 text-black' type="text" placeholder='Enter your city'  />
+            <form className='flex flex-col items-center w-5/6'  onSubmit={handleSubmit}>
+              <input className='w-11/12 border h-12 p-2 rounded-md mt-4 text-black' type="text" placeholder='Enter your Name' onChange={(e) => {name = e.target.value; console.log(name)}}/>
+              <input className='w-11/12 border h-12 p-2 rounded-md mt-4 text-black' type='email' placeholder='Enter your e-mail' onChange={(e) => {email = e.target.value; console.log(email)}}/>
+              <input className='w-11/12 border h-12 p-2 rounded-md mt-4 text-black' type="number" placeholder='Enter your mobile number' onChange={(e) => {number = e.target.value; console.log(number)}} />
+              <input className='w-11/12 border h-12 p-2 rounded-md mt-4 text-black' type="text" placeholder='Enter your city' onChange={(e) => {city = e.target.value; console.log(city)}} />
               <div>
                 <label className='text-black' htmlFor="Service">Choose a Service:</label>
                 <select className='text-black border rounded' name="Service">
