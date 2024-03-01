@@ -26,3 +26,7 @@ export const metadata: Metadata = {
 };
 
 export default Page;
+<<<<<<< HEAD
+=======
+
+>>>>>>> e4897d625b53a1a66df952621e42d18c7dd228d5
