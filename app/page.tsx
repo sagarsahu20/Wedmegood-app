@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./login/header";
+import Header from "./Components/header";
 import Login from "./login/login";
 import { ReactNode } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const Page = ({ children }: { children: ReactNode }) => {
+const Page = () => {
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -26,7 +26,4 @@ export const metadata: Metadata = {
 };
 
 export default Page;
-<<<<<<< HEAD
-=======
 
->>>>>>> e4897d625b53a1a66df952621e42d18c7dd228d5
