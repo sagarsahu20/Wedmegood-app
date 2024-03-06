@@ -3,7 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./Components/header";
 import Login from "./login/login";
-import { ReactNode } from "react";
+import Link from "next/link";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,8 +13,7 @@ const Page = () => {
     <html lang="en">
       <body className={inter.className}>
         <div className="bg-[white] h-screen">
-          <Header />
-          <Login />
+          <Link  href="/">Login</Link>
         </div>
       </body>
     </html>
