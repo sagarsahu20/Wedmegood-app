@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./Components/header";
+import Header from "./components/header";
 import Login from "./login/login";
-import Link from "next/link";
+import Contact from "./contacts/page";
+
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -12,8 +14,9 @@ const Page = () => {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="bg-[white] h-screen">
-          <Link  href="/">Login</Link>
+        <div className=" h-screen">
+         {/* <Contact /> */}
+          <h1>links in the route</h1>
         </div>
       </body>
     </html>
