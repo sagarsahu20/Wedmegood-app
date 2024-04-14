@@ -2,6 +2,7 @@ import React from 'react'
 import component from '../assets/component.png'
 import components from '../assets/component2.png'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 
@@ -11,7 +12,7 @@ function contact() {
             <h1 className='text-3xl'>WedMeGood</h1>
             <div className='flex gap-10 font-sans font-bold text-sm'>
                 <h1>ALL PAGES</h1>
-                <h1>ABOUT</h1>
+                <Link href={'/about'}>ABOUT</Link>
                 <h1>CONTACT</h1>
             </div>
             <h1 className='font-sans font-bold text-sm'>Call us: +1-305-3095</h1>

@@ -4,6 +4,7 @@ import workers from '../assets/workers.png'
 import component from '../assets/component.png'
 import worker from '../assets/worker.png'
 import ceo from '../assets/ceo.png'
+import Link from 'next/link';
 
 
 
@@ -15,7 +16,7 @@ function about() {
     <div className='flex gap-10 font-sans font-bold text-sm'>
       <h1>ALL PAGES</h1>
       <h1>ABOUT</h1>
-      <h1>CONTACT</h1>
+      <Link href={'/contacts'}>CONTACT</Link>
     </div>
     <h1 className='font-sans font-bold text-sm'>Call us: +1-305-3095</h1>
   </div>
@@ -51,12 +52,12 @@ function about() {
         </div>
       </div>
     </div>
-    <div className=' ml-10 mt-20 relative'>
-      <div className='flex w-screen '>
+    <div className=' ml-10 mt-20 relative mr-10'>
+      <div className='flex w-fit '>
         <Image src={workers} alt='workers' className='max-w-[790px] z-10' />
         <Image src={component} alt='bg' className='max-w-[700px] h-[380px] absolute right-12 -top-2' />
       </div>
-      <div className='flex'>
+      <div className='flex '>
         <h1 className='font-sans font-bold text-6xl mt-40'>30+ YEARS OF SERVICE<br />IN THE INDUSTRY.</h1>
         <Image src={worker} alt='bg' className='absolute right-0 top-40 w-[600px]' />
 
@@ -69,7 +70,7 @@ function about() {
         <p>We understand that taking the leap into solar can feel overwhelming, which is why education is core to our mission. Our solar consultants take the time to fully explain the technology, the financial benefits through incentives and long-term savings, and how to get the most value from solar.</p>
       </div>
       <div className='flex flex-col gap-14  max-w-[700px]'>
-        <h1 className='text-6xl font-sans font-bold'>OUR MISSION IS T<br />PROVIDE THE BEST SOLAR.</h1>
+        <h1 className='text-6xl font-sans font-bold'>OUR MISSION IS TO<br />PROVIDE THE BEST SOLAR.</h1>
         <p>From our small-town roots, Factiva Solar Factory has expanded to keep up with growing solar demand but remains a local company focused on community impact. We're committed to protecting the environment while helping our neighbors gain energy independence.</p>
       </div>
     </div>
